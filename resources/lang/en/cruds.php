@@ -159,5 +159,25 @@ return [
             'profit'            => 'Profit',
         ],
     ],
+    'roomManagement' => [
+        'title'          => 'Room Management',
+        'title_singular' => 'Room Management',
+    ],
+    'room' => [
+        'title'          => 'Room',
+        'title_singular' => 'Room',
+        'fields'         => [
+            'id'                 => 'ID',
+            'id_helper'          => ' ',
+            'room_number'        => 'Room Number',
+            'room_number_helper' => ' ',
+            'created_at'         => 'Created at',
+            'created_at_helper'  => ' ',
+            'updated_at'         => 'Updated at',
+            'updated_at_helper'  => ' ',
+            'deleted_at'         => 'Deleted at',
+            'deleted_at_helper'  => ' ',
+        ],
+    ],
 
 ];

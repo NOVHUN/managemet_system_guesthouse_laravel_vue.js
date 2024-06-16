@@ -206,6 +206,38 @@ const routes = [
             meta: { title: 'cruds.expenseReport.title' }
           }
         ]
+      },
+      {
+        path: 'room-management',
+        name: 'room_management',
+        component: View,
+        redirect: { name: 'rooms.index' },
+        children: [
+          {
+            path: 'rooms',
+            name: 'rooms.index',
+            component: () => import('@cruds/Rooms/Index.vue'),
+            meta: { title: 'cruds.room.title' }
+          },
+          {
+            path: 'rooms/create',
+            name: 'rooms.create',
+            component: () => import('@cruds/Rooms/Create.vue'),
+            meta: { title: 'cruds.room.title' }
+          },
+          {
+            path: 'rooms/:id',
+            name: 'rooms.show',
+            component: () => import('@cruds/Rooms/Show.vue'),
+            meta: { title: 'cruds.room.title' }
+          },
+          {
+            path: 'rooms/:id/edit',
+            name: 'rooms.edit',
+            component: () => import('@cruds/Rooms/Edit.vue'),
+            meta: { title: 'cruds.room.title' }
+          }
+        ]
       }
     ]
   }

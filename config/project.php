@@ -13,5 +13,6 @@ return [
             'short_code' => 'en',
         ],
     ],
+    'registered_user_role' => 'User',
 
 ];
