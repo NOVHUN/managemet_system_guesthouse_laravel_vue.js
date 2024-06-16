@@ -19,6 +19,8 @@ import ExpensesSingle from './cruds/Expenses/single'
 import IncomesIndex from './cruds/Incomes'
 import IncomesSingle from './cruds/Incomes/single'
 import ExpenseReports from './cruds/ExpenseReports'
+import RoomsIndex from './cruds/Rooms'
+import RoomsSingle from './cruds/Rooms/single'
 
 Vue.use(Vuex)
 
@@ -42,7 +44,9 @@ export default new Vuex.Store({
     ExpensesSingle,
     IncomesIndex,
     IncomesSingle,
-    ExpenseReports
+    ExpenseReports,
+    RoomsIndex,
+    RoomsSingle
   },
   strict: debug
 })

@@ -96,6 +96,20 @@ export default {
               gate: 'expense_report_access'
             }
           ]
+        },
+        {
+          title: 'cruds.roomManagement.title',
+          icon: 'table_view',
+          path: { name: 'room_management' },
+          gate: 'room_management_access',
+          children: [
+            {
+              title: 'cruds.room.title',
+              icon: 'table_view',
+              path: { name: 'rooms.index' },
+              gate: 'room_access'
+            }
+          ]
         }
       ]
     }

@@ -178,6 +178,30 @@ class PermissionsTableSeeder extends Seeder
                 'id'    => 42,
                 'title' => 'expense_report_access',
             ],
+            [
+                'id'    => 43,
+                'title' => 'room_management_access',
+            ],
+            [
+                'id'    => 44,
+                'title' => 'room_create',
+            ],
+            [
+                'id'    => 45,
+                'title' => 'room_edit',
+            ],
+            [
+                'id'    => 46,
+                'title' => 'room_show',
+            ],
+            [
+                'id'    => 47,
+                'title' => 'room_delete',
+            ],
+            [
+                'id'    => 48,
+                'title' => 'room_access',
+            ],
         ];
 
         Permission::insert($permissions);
